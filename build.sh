@@ -11,3 +11,8 @@ git init
 npx husky install .git/hooks
 npx husky add .git/hooks/commit-msg 'npx --no -- commitlint --edit "$1"'
 
+# Python env
+pip install pre-commit
+# conda install -c conda-forge pre-commit
+git config --unset-all core.hooksPath
+pre-commit install

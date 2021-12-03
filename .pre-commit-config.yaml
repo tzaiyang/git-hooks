@@ -1,0 +1,49 @@
+default_stages:
+- commit
+exclude: ^vendor
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - description: Prevent giant files from being committed.
+    id: check-added-large-files
+  - description: Forbid files which have a UTF-8 byte-order maker
+    id: check-byte-order-marker
+  - description: Attempts to load all json files to verify syntax
+    id: check-json
+  - description: Check for files that contain merge conflict strings
+    id: check-merge-conflict
+  - description: Check for symlinks which do not point to anything
+    id: check-symlinks
+  - description: Attempts to load all yaml files to verify syntax
+    id: check-yaml
+  - description: Makes sure files end in a newline and only a newline
+    id: end-of-file-fixer
+#  - description: 'Protect specific branches for direct checkins, use args: [--branch,
+#      staging, --branch, master] to set the branch'
+#    id: no-commit-to-branch
+  - description: Trims trailing whitespace
+    id: trailing-whitespace
+
+- repo: https://github.com/pre-commit/mirrors-autopep8
+  rev: v1.5.7  # Use the sha / tag you want to point at
+  hooks:
+  - description: Automatically formats Python code to conform to the PEP 8 style guide
+    id: autopep8
+
+- repo: https://github.com/dnephin/pre-commit-golang
+  rev: v0.4.0
+  hooks:
+    - id: go-fmt
+    - id: go-vet
+    - id: go-lint
+    - id: go-imports
+    - id: go-cyclo
+      args: [-over=15]
+    - id: validate-toml
+    - id: no-go-testing
+    - id: golangci-lint
+    - id: go-critic
+    - id: go-unit-tests
+    - id: go-build
+    - id: go-mod-tidy
