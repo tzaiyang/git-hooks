@@ -1,18 +1,5 @@
 #!/bin/bash
 set -e
-if [[ -f "./package.json" ]]; then
-  echo "Error: package.json has exist"
-  exit 1
-fi
-if [[ -f "./.pre-commit-config.yaml" ]]; then
-  echo "Error: .pre-commit-config.yaml has exist"
-  exit 1
-fi
-if [[ -f "./commitlint.config.js" ]]; then
-  echo "Error: commitling.config.js has exist"
-  exit 1
-fi
-curl -fsSL https://raw.githubusercontent.com/tzaiyang/git-hooks/master/package.json >package.json
 curl -fsSL https://raw.githubusercontent.com/tzaiyang/git-hooks/master/.pre-commit-config.yaml >.pre-commit-config.yaml
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" >commitlint.config.js
 
@@ -26,10 +13,21 @@ if ! command -v node > /dev/null 2>&1 ; then
       exit 1
     fi
 fi
-npm install
-git init
-npx husky install .git/hooks # activate hooks
-npx husky add .git/hooks/commit-msg 'npx --no -- commitlint --edit "$1"'
+# if ! command -v husky > /dev/null 2>&1 ; then
+# npm install -g husky
+# fi
+if ! command -v commitlint > /dev/null 2>&1 ; then
+  npm install -g commitlint
+  npm install -g @commitlint/config-conventional
+fi
+
+if ! command -v standard-version > /dev/null 2>&1 ; then
+  npm install -g standard-version
+fi
+
+git init # confirm this is a git repo
+echo 'commitlint --edit "$1"' >.git/hooks/commit-msg
+chmod +x .git/hooks/commit-msg
 
 # python env
 if ! command -v python > /dev/null 2>&1 ; then
@@ -42,5 +40,5 @@ if ! command -v pre-commit > /dev/null 2>&1 ; then
     pip install pre-commit
 #    conda install -c conda-forge pre-commit
 fi
-git config --unset-all core.hooksPath
+# git config --unset-all core.hooksPath
 pre-commit install

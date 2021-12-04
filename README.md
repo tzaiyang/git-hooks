@@ -28,7 +28,7 @@ git flow feature start <name> [<base>]
 
 4. Release with [semantic version](https://semver.org/) according [conventional commit](https://www.conventionalcommits.org/) specification:
 ```bash
-npm run release
+standard-version
 ```
 
 ## References
