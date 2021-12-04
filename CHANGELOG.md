@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/tzaiyang/git-hooks/compare/v1.1.0...v1.2.0) (2021-12-04)
+
+
+### Features
+
+* install js tool to global env ([4b0f577](https://github.com/tzaiyang/git-hooks/commit/4b0f57792a6ec0ec8339717f46bf384a2c7b5d29))
+
+
+### Bug Fixes
+
+* fix build.sh ([a212161](https://github.com/tzaiyang/git-hooks/commit/a212161f908943b8516fd2d6a7f78177e734143e))
+
 ## [1.1.0](https://github.com/tzaiyang/git-hooks/compare/v1.0.0...v1.1.0) (2021-12-03)
 
 
