@@ -19,9 +19,9 @@ repos:
     id: check-yaml
   - description: Makes sure files end in a newline and only a newline
     id: end-of-file-fixer
-  - description: 'Protect specific branches for direct checkins, use args: [--branch,
-      staging, --branch, master] to set the branch'
-    id: no-commit-to-branch
+  # - description: 'Protect specific branches for direct checkins, use args: [--branch,
+  #     staging, --branch, master] to set the branch'
+  #   id: no-commit-to-branch
   - description: Trims trailing whitespace
     id: trailing-whitespace
 
@@ -56,3 +56,10 @@ repos:
 #     types: [go]
 #     language: golang
 #     pass_filenames: false
+
+# - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+#   rev: v5.0.0
+#   hooks:
+#   - description: lint commit message with conventional commits
+#     id: commitlint
+#     stages: [commit-msg]
