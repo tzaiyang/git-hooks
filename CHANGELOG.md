@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/tzaiyang/git-hooks/compare/v1.2.0...v2.0.0) (2021-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* change install and activate method.
+
+### Features
+
+* the new management method for hooks ([6054905](https://github.com/tzaiyang/git-hooks/commit/6054905b40eae35810018cfb1956212b0048dfb7))
+
+### [1.1.1](https://github.com/tzaiyang/git-hooks/compare/v1.1.0...v1.1.1) (2021-12-04)
+
 ## [1.2.0](https://github.com/tzaiyang/git-hooks/compare/v1.1.0...v1.2.0) (2021-12-04)
 
 
