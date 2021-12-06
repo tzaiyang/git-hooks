@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/tzaiyang/git-hooks/compare/v2.2.0...v2.3.0) (2021-12-06)
+
+
+### Features
+
+* turn off taliman default ([474b946](https://github.com/tzaiyang/git-hooks/commit/474b94672c8d70e2f96121b4e7e503604bebba8c))
+
 ## [2.2.0](https://github.com/tzaiyang/git-hooks/compare/v2.1.1...v2.2.0) (2021-12-06)
 
 
