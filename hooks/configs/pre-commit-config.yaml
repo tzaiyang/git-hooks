@@ -2,6 +2,13 @@ default_stages:
 - commit
 exclude: ^vendor
 repos:
+- repo: https://github.com/thoughtworks/talisman
+  rev: v1.23.0
+  hooks:
+  # either `commit` or `push` support
+  -  id: talisman-commit
+  # -  id: talisman-push
+
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1
   hooks:
