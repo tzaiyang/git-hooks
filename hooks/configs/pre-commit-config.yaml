@@ -19,9 +19,10 @@ repos:
     id: check-yaml
   - description: Makes sure files end in a newline and only a newline
     id: end-of-file-fixer
-  # - description: 'Protect specific branches for direct checkins, use args: [--branch,
-  #     staging, --branch, master] to set the branch'
-  #   id: no-commit-to-branch
+  - description: 'Protect specific branches for direct checkins, use args: [--branch,
+      staging, --branch, master] to set the branch'
+    id: no-commit-to-branch
+    args: [--branch, master, --branch, develop]
   - description: Trims trailing whitespace
     id: trailing-whitespace
 
