@@ -11,12 +11,16 @@ Git hooks and tools to validate development specifications such as:
     # Check enviorment and dependencies
     bash $HOME/.git-template/check_env.sh
     ```
-   Two ways to activate git hooks:
+
+   Activate git hooks in your repo:
 
     ```bash
+    # copy init.templateDir to .git/hooks
+    # you can customize your config to modify in .git/hooks/configs directory
     git init
-    # or change hooks path
-    git config core.hooksPath $HOME/.git-template/hooks
+
+    # deactivate
+    rm -rf .git/hooks
     ```
 
 2. Manage branchs according Vincent Driessen's [branching model](https://nvie.com/posts/a-successful-git-branching-model/) with [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation) tool.
