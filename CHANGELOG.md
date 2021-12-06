@@ -10,14 +10,6 @@ All notable changes to this project will be documented in this file. See [standa
 * add check branch to pre-commit and pre-push ([ad6e46f](https://github.com/tzaiyang/git-hooks/commit/ad6e46fc343d2a38c0ba9f1e9b64edead06fe3e3))
 * add talisman to pre-commit ([fe66e3d](https://github.com/tzaiyang/git-hooks/commit/fe66e3d5cd04e455eb5a43656e6f640d94f2987a))
 
-## [2.2.0](https://github.com/tzaiyang/git-hooks/compare/v2.1.1...v2.2.0) (2021-12-06)
-
-
-### Features
-
-* add check branch to pre-commit and pre-push ([ad6e46f](https://github.com/tzaiyang/git-hooks/commit/ad6e46fc343d2a38c0ba9f1e9b64edead06fe3e3))
-* add talisman to pre-commit ([fe66e3d](https://github.com/tzaiyang/git-hooks/commit/fe66e3d5cd04e455eb5a43656e6f640d94f2987a))
-
 ### [2.1.1](https://github.com/tzaiyang/git-hooks/compare/v2.1.0...v2.1.1) (2021-12-06)
 
 
