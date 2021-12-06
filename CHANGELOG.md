@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/tzaiyang/git-hooks/compare/v2.0.1...v2.1.0) (2021-12-06)
+
+
+### Features
+
+* optimize activate method ([ce4538b](https://github.com/tzaiyang/git-hooks/commit/ce4538b47dde959ff6a87731d9928879d743a747))
+
+
+### Bug Fixes
+
+* fix check env bug ([e08653a](https://github.com/tzaiyang/git-hooks/commit/e08653a6eee4cb8431815f8d041a6738ec153504))
+
 ### [2.0.1](https://github.com/tzaiyang/git-hooks/compare/v2.0.0...v2.0.1) (2021-12-05)
 
 
