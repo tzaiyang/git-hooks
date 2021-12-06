@@ -49,8 +49,10 @@ do
 		fi
 
 		# Check tag
-		tag=`git describe --abbrev=0`
+		tag=`git describe --tags --abbrev=0`
 		pattern='^v[0-9]*.[0-9]*.[0-9]*$'
+		# echo "v1.7.9-release-20211206" | egrep -i "^v[0-9]*.[0-9]*.[0-9]*-((release)|(test[0-9]*))-[0-9]{8}$"
+		# pattern='^v[0-9]*.[0-9]*.[0-9]*-((release)|(test[0-9]*))-[0-9]{8}$'
 		if [[ $tag =~ $pattern ]]
 		then
 			echo "Check tag spec... [passed]"
