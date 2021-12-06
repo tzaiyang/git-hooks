@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/tzaiyang/git-hooks/compare/v2.1.0...v2.1.1) (2021-12-06)
+
+
+### Bug Fixes
+
+* pre-push check tag ([7e1aea1](https://github.com/tzaiyang/git-hooks/commit/7e1aea132040fbfe672600b6e58b38fd267ec5da))
+
 ## [2.1.0](https://github.com/tzaiyang/git-hooks/compare/v2.0.1...v2.1.0) (2021-12-06)
 
 
