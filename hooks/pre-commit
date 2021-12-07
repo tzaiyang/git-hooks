@@ -28,6 +28,6 @@ if [[ $branch =~ ${branch_pattern} ]]
 then
     echo "Check branch name... [passed]"
 else
-    echo >&2 "Branch name is not right format in Vincent Driessen's branching model. Get help: https://nvie.com/posts/a-successful-git-branching-model"
+    echo >&2 "Branch name $branch is not right format in Vincent Driessen's branching model. Get help: https://nvie.com/posts/a-successful-git-branching-model"
     exit 1
 fi

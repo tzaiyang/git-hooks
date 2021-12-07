@@ -57,18 +57,7 @@ do
 		then
 			echo "Check tag spec... [passed]"
 		else
-			echo >&2 "Tag with version number is not right format. Get help: https://semver.org"
-			exit 1
-		fi
-
-		# Check branch
-		branch_pattern='^((master)|(main)|(develop)|(feature/.*)|(bugfix/.*)|(release/.*)|(hotfix/.*))$'
-		branch=$(git branch --show-current)
-		if [[ $branch =~ ${branch_pattern} ]]
-		then
-			echo "Check branch name... [passed]"
-		else
-			echo >&2 "Branch name is not right format in Vincent Driessen's branching model. Get help: https://nvie.com/posts/a-successful-git-branching-model"
+			echo >&2 "Tag with $tag is not right format. Get help: https://semver.org"
 			exit 1
 		fi
 	fi
