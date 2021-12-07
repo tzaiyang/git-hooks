@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -d .git/hooks/configs ]; then
+    CONFIG_DIR=.git/hooks/configs
+else
+    CONFIG_DIR=$(git config init.templateDir)/hooks/configs
+fi
+
+cp ${CONFIG_DIR}/versionrc .versionrc
