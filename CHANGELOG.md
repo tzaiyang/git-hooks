@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/tzaiyang/git-hooks/compare/v2.3.0...v2.3.1) (2021-12-07)
+
+
+### Features
+
+* add standard-version config file and auto add by post-commit ([24afb83](https://github.com/tzaiyang/git-hooks/commit/24afb8316b941f5e1a3ff9068c595c386e77fde5))
+* remove duplicate branch check in pre-push ([f9ec96e](https://github.com/tzaiyang/git-hooks/commit/f9ec96ef8b5a1e6d6727ccef93aec9d4fac3a426))
+
+
+### Bug Fixes
+
+* fix check tag when repo has no tag ([8aac451](https://github.com/tzaiyang/git-hooks/commit/8aac4510c981bd934cda29360d951bfd21b05d58))
+
 ## [2.3.0](https://github.com/tzaiyang/git-hooks/compare/v2.2.0...v2.3.0) (2021-12-06)
 
 
