@@ -56,6 +56,9 @@ do
 		if [[ $tag =~ ${tag_pattern} ]]
 		then
 			echo "Check tag spec... [passed]"
+		elif [[ -z $tag ]]
+		then
+			echo "There is no tag in repo... [passed]"
 		else
 			echo >&2 "Tag with $tag is not right format. Get help: https://semver.org"
 			exit 1
