@@ -1,3 +1,13 @@
 #!/bin/bash
 cmd=$1
-go $cmd $(go list ./... | grep -v /vendor/)
+
+if [[ -z $(find ./ -name "*.go") ]]
+then
+    echo "there is no go files"
+else
+    if command -v go > /dev/null; then
+        go $cmd $(go list ./... | grep -v /vendor/)
+    elses
+        echo '`go` not found.  please install golang enviorment' 1>&2
+        exit 1
+    fi
