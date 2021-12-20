@@ -11,3 +11,4 @@ else
         echo '`go` not found.  please install golang enviorment' 1>&2
         exit 1
     fi
+fi

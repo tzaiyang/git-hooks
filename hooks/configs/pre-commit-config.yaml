@@ -38,6 +38,7 @@ repos:
   hooks:
   - description: Automatically formats Python code to conform to the PEP 8 style guide
     id: autopep8
+    args: ["--in-place", "--max-line-length=120"]
 
 # - repo: https://github.com/dnephin/pre-commit-golang
 #   rev: v0.4.0
@@ -78,9 +79,10 @@ repos:
 #     language: golang
 #     pass_filenames: false
 
-# - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-#   rev: v5.0.0
-#   hooks:
-#   - description: lint commit message with conventional commits
-#     id: commitlint
-#     stages: [commit-msg]
+- repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+  rev: v5.0.0
+  hooks:
+  - description: lint commit message with conventional commits
+    id: commitlint
+    stages: [commit-msg]
+    # additional_dependencies: ['@commitlint/config-angular']
