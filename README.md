@@ -9,7 +9,7 @@ Git hooks and tools to validate development specifications such as:
     git config --global init.templateDir $HOME/.git-template
     git clone https://github.com/tzaiyang/git-hooks $HOME/.git-template
     # Check enviorment and dependencies
-    bash $HOME/.git-template/check-dep.sh
+    bash $HOME/.git-template/hooks/scripts/check-dep.sh
     ```
 
    Activate git hooks in your repo:
