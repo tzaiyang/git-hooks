@@ -6,4 +6,4 @@ else
     CONFIG_DIR=$(git config init.templateDir)/hooks/configs
 fi
 
-cp ${CONFIG_DIR}/versionrc .versionrc
+# cp ${CONFIG_DIR}/versionrc .versionrc
