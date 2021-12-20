@@ -14,16 +14,16 @@ ARGS=(hook-impl --config=${CONFIG_DIR}/pre-commit-config.yaml --hook-type=commit
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ARGS+=(--hook-dir "$HERE" -- "$@")
 
-# if command -v pre-commit > /dev/null; then
-#     exec pre-commit "${ARGS[@]}"
-# else
-#     echo '`pre-commit` not found.  please run `pip install pre-commit` to install pre-commit' 1>&2
-#     exit 1
-# fi
-
-if command -v commitlint > /dev/null; then
-    exec commitlint --config ${CONFIG_DIR}/commitlint.config.js --edit "$1"
+if command -v pre-commit > /dev/null; then
+    exec pre-commit "${ARGS[@]}"
 else
-    echo '`commitlint` not found.  please run `npm install -g @commitlint/config-conventional @commitlint/cli` to install commitlint' 1>&2
+    echo '`pre-commit` not found.  please run `pip install pre-commit` to install pre-commit' 1>&2
     exit 1
 fi
+
+# if command -v commitlint > /dev/null; then
+#     exec commitlint --config ${CONFIG_DIR}/commitlint.config.js --edit "$1"
+# else
+#     echo '`commitlint` not found.  please run `npm install -g @commitlint/config-conventional @commitlint/cli` to install commitlint' 1>&2
+#     exit 1
+# fi

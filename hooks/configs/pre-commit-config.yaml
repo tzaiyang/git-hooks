@@ -85,4 +85,5 @@ repos:
   - description: lint commit message with conventional commits
     id: commitlint
     stages: [commit-msg]
+    args: ["--config=.git/hooks/configs/commitlint.config.js"]
     # additional_dependencies: ['@commitlint/config-angular']
