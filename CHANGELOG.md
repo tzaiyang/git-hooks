@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/tzaiyang/git-hooks/compare/v2.3.1...v2.4.0) (2021-12-20)
+
+
+### Features
+
+* remove commitlint install dependency ([167a1d7](https://github.com/tzaiyang/git-hooks/commit/167a1d7c452ccb862f6bb49f71beccc82fceb178))
+* remove versionrc auto copy ([ad789fe](https://github.com/tzaiyang/git-hooks/commit/ad789fe69dbb2886e471d5b2c71c5e078ba5d3df))
+
+
+### Bug Fixes
+
+* fix no golang file when check go file ([572444b](https://github.com/tzaiyang/git-hooks/commit/572444b268424e26914625c0c0ce227dacb402f9))
+* go vet error in pre-commit hook ([b30e146](https://github.com/tzaiyang/git-hooks/commit/b30e14624dab60ce2d3bd64041aa2685847514b8))
+* golang check and autopep8 line-length and tag check ([4ca1fb3](https://github.com/tzaiyang/git-hooks/commit/4ca1fb33d4ef98d15912d128e55e2ab5c0337e2f))
+* tag pattern ([4d49820](https://github.com/tzaiyang/git-hooks/commit/4d498205be12b19d3dac27c7984c8de875da7bbc))
+
 ### [2.3.1](https://github.com/tzaiyang/git-hooks/compare/v2.3.0...v2.3.1) (2021-12-07)
 
 
