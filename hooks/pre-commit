@@ -16,7 +16,7 @@ ARGS+=(--hook-dir "$HERE" -- "$@")
 
 if command -v pre-commit > /dev/null; then
     exec pre-commit "${ARGS[@]}"
-elses
+else
     echo '`pre-commit` not found.  please run `pip install pre-commit` to install pre-commit' 1>&2
     exit 1
 fi
