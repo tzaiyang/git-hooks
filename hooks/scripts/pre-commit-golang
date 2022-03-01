@@ -7,7 +7,7 @@ then
 else
     if command -v go > /dev/null; then
         go $cmd $(go list ./... | grep -v /vendor/)
-    elses
+    else
         echo '`go` not found.  please install golang enviorment' 1>&2
         exit 1
     fi
