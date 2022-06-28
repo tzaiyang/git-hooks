@@ -12,8 +12,8 @@ repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1
   hooks:
-  - description: Prevent giant files from being committed.
-    id: check-added-large-files
+  # - description: Prevent giant files from being committed.
+  #   id: check-added-large-files
   - description: Forbid files which have a UTF-8 byte-order maker
     id: check-byte-order-marker
   - description: Attempts to load all json files to verify syntax
@@ -26,10 +26,10 @@ repos:
     id: check-yaml
   - description: Makes sure files end in a newline and only a newline
     id: end-of-file-fixer
-  - description: 'Protect specific branches for direct checkins, use args: [--branch,
-      staging, --branch, master] to set the branch'
-    id: no-commit-to-branch
-    args: [--branch, master, --branch, develop]
+  # - description: 'Protect specific branches for direct checkins, use args: [--branch,
+  #     staging, --branch, master] to set the branch'
+  #   id: no-commit-to-branch
+  #   args: [--branch, master, --branch, develop]
   - description: Trims trailing whitespace
     id: trailing-whitespace
 
@@ -57,18 +57,18 @@ repos:
 #   - id: go-build
 #   - id: go-mod-tidy
 
-- repo: local
-  hooks:
-  - description: run go fmt
-    id: go-fmt
-    name: go-fmt
-    language: script
-    entry: .git/hooks/scripts/pre-commit-golang fmt
-  - description: run go vet
-    id: go-vet
-    name: go-vet
-    language: script
-    entry: .git/hooks/scripts/pre-commit-golang vet
+# - repo: local
+#   hooks:
+#   - description: run go fmt
+#     id: go-fmt
+#     name: go-fmt
+#     language: script
+#     entry: .git/hooks/scripts/pre-commit-golang fmt
+#   - description: run go vet
+#     id: go-vet
+#     name: go-vet
+#     language: script
+#     entry: .git/hooks/scripts/pre-commit-golang vet
 
 # - repo: https://github.com/golangci/golangci-lint
 #   rev: v1.43.0
